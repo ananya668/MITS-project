@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background-image: url('https://thumbs.dreamstime.com/z/to-do-list-seamless-pattern-background-business-flat-vector-illustration-checklist-task-list-symbol-pattern-to-do-list-seamless-110193579.jpg');
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center; /* Center align all text */
+}
+
+header {
+    background-color: #a7f6fd;
+    color: black;
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+header img {
+    width: 100px;
+    height: 75px;
+    margin: 10px auto; /* Center align image */
+    display: block;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.info {
+    background-color: rgba(255, 255, 186, 0.9);
+    color: #333;
+    padding: 20px;
+    margin: 20px auto; /* Center the div */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px; /* Slightly narrower max width for a classic look */
+    font-size: large;
+}
+.nav-icons li {
+    display: inline;
+}
+
+.task-entry {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px; /* Slightly narrower max width for a classic look */
+    margin: 20px auto; /* Center the div */
+}
+
+.task-entry input[type="text"],
+.task-entry select,
+.task-entry input[type="date"] {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px auto; /* Center align inputs */
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333; /* Adjusted text color */
+}
+
+.task-entry button {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px auto; /* Center align button */
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-entry button:hover {
+    background-color: #ff5a4c;
+    transform: scale(1.05);
+}
+
+.task-filters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.task-filters button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-filters button:hover {
+    background-color: #ff5a4c;
+    transform: scale(1.05);
+}
+
+.task-list {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px; /* Slightly narrower max width for a classic look */
+    margin: 20px auto; /* Center the div */
+}
+
+.task-list h2 {
+    margin-top: 0;
+    font-family: 'Pacifico', cursive;
+    color: #333; /* Adjusted text color */
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.task-list li:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.task-list li button {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list li button:hover {
+    background-color: #f0f0f0;
+}
+
+.task-list li button.delete-btn {
+    color: red;
+}
+
+.task-list li button.complete-btn {
+    color: green;
+}
+
+.task-list li span.priority {
+    font-weight: bold;
+    color: black;
+}
